@@ -6,15 +6,21 @@ function Cat(name) {
 }
 
 const container = document.querySelector('#container');
-
 const clickerFragment = document.createDocumentFragment();
-const catDiv = document.createElement('div');
-catDiv.classList.add('cat-complete');
-const buttonDiv = document.createElement('div');
-buttonDiv.classList.add('holder');
 
-catDiv.appendChild(buttonDiv);
+for (cat of cats) {
+	const catDiv = document.createElement('div');
+	catDiv.classList.add('cat-complete');
+	const catImg = document.createElement('img');
+	catImg.src = 'img/c1.jpeg';
+	catDiv.appendChild(catImg);
+	const buttonDiv = document.createElement('div');
+	buttonDiv.classList.add('holder');
+	catDiv.appendChild(buttonDiv);
+	clickerFragment.appendChild(catDiv);
+}
 
-clickerFragment.appendChild(catDiv);
+
 
 container.appendChild(clickerFragment);
+
