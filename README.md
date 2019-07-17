@@ -1,1 +1,1 @@
-# Cat Clicker
+# Template Web Project
