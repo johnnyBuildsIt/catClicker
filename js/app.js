@@ -1,10 +1,12 @@
 const buttons = document.getElementsByClassName('like-button');
-const likeText = document.querySelector('#likes');
 let count = 0;
 
-//button.addEventListener('click', likeFunction);
+for (button of buttons){
+	let likeText = button.parentNode.childNodes[3];
+	let count = 0;
 
-function likeFunction(){
-	count++
-	likeText.innerHTML = count;
+	button.addEventListener('click', function(){
+		count++
+		likeText.innerHTML = count;
+	});
 }
