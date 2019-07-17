@@ -1,10 +1,6 @@
-const button = document.querySelector('#like-button');
-const likeText = document.querySelector('#likes');
-let count = 0;
+cats = ['c1', 'c2', 'c3', 'c4', 'c5', 'c6'];
 
-button.addEventListener('click', likeFunction);
-
-function likeFunction(){
-	count++
-	likeText.innerHTML = count;
+function Cat(name) {
+	this.img = `img/${name}.jpeg`;
+	this.counter = 0;
 }
