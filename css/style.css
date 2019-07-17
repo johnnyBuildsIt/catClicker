@@ -1,8 +1,8 @@
 #container {
 	margin: 3em auto 0 auto;
-	width: 500px;
+	width: 1000px;
 	display: flex;
-	flex-direction: column;
+	justify-content: space-around;
 }
 
 img {
@@ -11,11 +11,16 @@ img {
 	margin: 0 auto;
 }
 
-#holder {
-	margin: auto;
+.holder {
+	display: flex;
+	justify-content: center;
 }
 
 button {
 	width: 100px;
-	margin: 10px auto 0 auto;
+	margin-right: 10px;
+}
+
+.likes {
+	margin-top: 8px;
 }
