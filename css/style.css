@@ -1,0 +1,21 @@
+#container {
+	margin: 3em auto 0 auto;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+}
+
+img {
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+}
+
+#holder {
+	margin: auto;
+}
+
+button {
+	width: 100px;
+	margin: 10px auto 0 auto;
+}
