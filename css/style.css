@@ -1,8 +1,13 @@
 #container {
 	margin: 3em auto 0 auto;
-	width: 500px;
+	width: 1100px;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.cat-complete {
+	margin-bottom: 2em;
 }
 
 img {
@@ -11,11 +16,17 @@ img {
 	margin: 0 auto;
 }
 
-#holder {
+.holder {
 	margin: auto;
+	display: flex;
+	justify-content: space-around;
 }
 
 button {
 	width: 100px;
-	margin: 10px auto 0 auto;
+	margin: 10px 0 0 0;
+}
+
+.likes {
+	margin-top: 1em;
 }
